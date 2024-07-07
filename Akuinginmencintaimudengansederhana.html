@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Percentage Calculator</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Love Percentage Calculator ♥️</h1>
+    <input type="text" id="name1" placeholder="your name">
+    <input type="text" id="name2" placeholder="partner name">
+    <button onclick="calculateLove()">Calculate Love Percentage</button>
+    <div id="result"></div>
+</div>
+<script>
+  function calculateLove() {
+    const name1 = document.getElementById('name1').value.trim().toLowerCase();
+    const name2 = document.getElementById('name2').value.trim().toLowerCase();
+    
+    let lovePercentage = Math.floor(Math.random() * 100) + 1;
+    
+    document.getElementById('result').innerHTML = `The love percentage between ${name1} and ${name2} is ${lovePercentage}% ❤️`;
+}
+</script>
+</body>
+</html>
